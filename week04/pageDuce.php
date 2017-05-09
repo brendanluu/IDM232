@@ -11,5 +11,9 @@
        ?>
     </pre>
 
+    <<?php
+      echo {$id} . "....." . {$fname};
+     ?>
+
   </body>
 </html>
