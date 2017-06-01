@@ -1,4 +1,3 @@
-<?php require_once 'includes/initialize.php'; ?>
 
 <!DOCTYPE html>
 <html>
@@ -123,21 +122,31 @@
 
       <div id="bottomcontent">
 
+        <div id=header>
 
-      <div id=logo>
-        <!-- <img id=logomark src="imgs\uncomfortablevr_logo.svg" alt="Uncomfortable V R Logo"> -->
-        <h1 id=logotype>UncomfortableVR</h1>
+            <div id=logo>
+              <!-- <img id=logomark src="imgs\uncomfortablevr_logo.svg" alt="Uncomfortable V R Logo"> -->
+              <h1 id=logotype>UncomfortableVR</h1>
+            </div>
+
+            <h3>Innovative WebVR-sites.</h3>
+            <h3><a href="sumbit.com">Submit</a></h3>
+
       </div>
-
-      <h3>Innovative WebVR-sites.</h3>
-      <h3><a href="sumbit.com">Submit</a></h3>
 
       <div id="allexp">
 
-      
+        <div id=exp>
+          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
+          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg"></a>
+        </div>
+        <p>
+          Zuumo
+        </p>
+
 <!-- SENSE OF PROMISE -->
       <div id=exp>
-        <a href="http://senseofpromise.com/">
+        <a href="http://senseofpromise.com/" target="_blank">
         <img border="0" alt="Sense of Promise" src="imgs\senseofpromise.jpg"></a>
     </div>
       <p>
@@ -146,7 +155,7 @@
 
 <!-- THE CAGE CAGE -->
       <div id=exp>
-        <a href="http://www.thecagecage.com/">
+        <a href="http://www.thecagecage.com/" target="_blank">
         <img border="0" alt="The Cage Cage" src="imgs\thecagecage.jpg"></a>
     </div>
       <p>
@@ -155,7 +164,7 @@
 
 <!-- EYEXPO -->
       <div id=exp>
-        <a href="http://eyexpo.com/vr/shoppingdemo1/index.html">
+        <a href="http://eyexpo.com/vr/shoppingdemo1/index.html" target="_blank">
         <img border="0" alt="Eyexpo" src="imgs\eyexpo.jpg"></a>
     </div>
       <p>
