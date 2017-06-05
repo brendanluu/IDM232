@@ -122,7 +122,7 @@
 
       <div id="bottomcontent">
 
-        <div id=header>
+        <div id=topinfo>
 
             <div id=logo>
               <!-- <img id=logomark src="imgs\uncomfortablevr_logo.svg" alt="Uncomfortable V R Logo"> -->
