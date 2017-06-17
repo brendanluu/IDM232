@@ -1,3 +1,14 @@
+<?php require_once 'includes/initialize.php'; ?>
+
+<?php   $query = "SELECT * FROM sites";
+  $result = mysqli_query($connection, $query);
+
+  // Check there are no errors with our SQL statement
+  if (!$result) {
+    die ("Database query failed.");
+  }
+  echo "works";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -184,3 +195,10 @@
 
   </body>
 </html>
+
+<div class="site">
+  <figure>
+    <img src="<?php echo $result['siteImage']; ?>" alt="<?php echo $result['siteTitle']; ?>">
+    <figcaption><?php echo $result['siteTitle']; ?></figcaption>
+  </figure>
+</div>
