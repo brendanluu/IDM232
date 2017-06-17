@@ -1,14 +1,4 @@
-<?php require_once 'includes/initialize.php'; ?>
 
-<?php   $query = "SELECT * FROM sites";
-  $result = mysqli_query($connection, $query);
-
-  // Check there are no errors with our SQL statement
-  if (!$result) {
-    die ("Database query failed.");
-  }
-  echo "works";
-?>
 
 <!DOCTYPE html>
 <html>
