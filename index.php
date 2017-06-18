@@ -131,7 +131,7 @@
             </div>
 
             <h3>Innovative WebVR-sites.</h3>
-            <h3><a href="sumbit.com">Submit</a></h3>
+            <h3><a href=”mailto:brenkluu@gmail.com?subject=UncomfortableVR%20Submission&body=Enter%20link%20here...″>Submit</a></h3>
 
       </div>
 
@@ -139,47 +139,59 @@
 
         <div id=exp>
           <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
-          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg"></a>
+          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
         </div>
-        <p>
-          Zuumo
-        </p>
+
+        <div id=exp>
+          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
+          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
+        </div>
+
+        <div id=exp>
+          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
+          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
+        </div>
+
+        <div id=exp>
+          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
+          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
+        </div>
+
+
+
 
 <!-- SENSE OF PROMISE -->
       <div id=exp>
         <a href="http://senseofpromise.com/" target="_blank">
-        <img border="0" alt="Sense of Promise" src="imgs\senseofpromise.jpg"></a>
+        <img border="0" alt="Sense of Promise" src="imgs\senseofpromise.jpg">Sense of Promise</a>
     </div>
-      <p>
-        Sense of Promise
-      </p>
+
 
 <!-- THE CAGE CAGE -->
       <div id=exp>
         <a href="http://www.thecagecage.com/" target="_blank">
-        <img border="0" alt="The Cage Cage" src="imgs\thecagecage.jpg"></a>
+        <img border="0" alt="The Cage Cage" src="imgs\thecagecage.jpg">The Cage Cage</a>
     </div>
-      <p>
-        The Cage Cage
-      </p>
 
 <!-- EYEXPO -->
       <div id=exp>
         <a href="http://eyexpo.com/vr/shoppingdemo1/index.html" target="_blank">
-        <img border="0" alt="Eyexpo" src="imgs\eyexpo.jpg"></a>
+        <img border="0" alt="Eyexpo" src="imgs\eyexpo.jpg">Eyexpo</a>
     </div>
-      <p>
-        Eyexpo
-      </p>
+
 
     </div>
+
+    <div id="bottominfo">
+      <h3>Created by <a href="brendanluu.com">brendan luu</a></h3>
+    </div>
+
 
   </div>
 
 </div>
 
     </section>
-
 
 
 
