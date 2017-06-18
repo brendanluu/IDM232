@@ -1,3 +1,5 @@
+<?php require_once 'includes/initialize.php'; ?>
+
 
 
 <!DOCTYPE html>
@@ -8,9 +10,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <title>Uncomfortable VR - New, cool, innovative WebVR sites</title>
+    <title>UncomfortableVR - Innovative WebVR-sites</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8a8a8a">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+
+
 
 
     <!-- a-frame uncomfortablevr logo embed -->
@@ -121,6 +131,8 @@
 
     <div id=bottomwrapper>
 
+
+
       <div id="bottomcontent">
 
         <div id=topinfo>
@@ -131,59 +143,36 @@
             </div>
 
             <h3>Innovative WebVR-sites.</h3>
-            <h3><a href=”mailto:brenkluu@gmail.com?subject=UncomfortableVR%20Submission&body=Enter%20link%20here...″>Submit</a></h3>
+            <h3><a href="mailto:brenkluu@gmail.com?subject=UncomfortableVR%20Submission&body=Enter%20link%20here...">Submit</a></h3>
 
       </div>
 
       <div id="allexp">
 
-        <div id=exp>
-          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
-          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
+        <?php   $query = "SELECT * FROM sites";
+          $result = mysqli_query($connection, $query);
+
+          // Check there are no errors with our SQL statement
+          if (!$result) {
+            die ("Database query failed.");
+          }
+          while ($site = mysqli_fetch_assoc($result)) {
+        ?>
+
+        <div id="exp">
+          <a href="<?php echo $site['siteLink']; ?>" target="_blank" >
+            <img src="<?php echo $site['siteImage']; ?>" alt="<?php echo $site['siteTitle']; ?>"><?php echo $site['siteTitle']; ?></a>
         </div>
 
-        <div id=exp>
-          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
-          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
-        </div>
-
-        <div id=exp>
-          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
-          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
-        </div>
-
-        <div id=exp>
-          <a href="https://moyashipan.github.io/zuumo/" target="_blank" >
-          <img border="0" alt="Zuumo" src="imgs\zuumo.jpg">Zuumo</a>
-        </div>
-
-
-
-
-<!-- SENSE OF PROMISE -->
-      <div id=exp>
-        <a href="http://senseofpromise.com/" target="_blank">
-        <img border="0" alt="Sense of Promise" src="imgs\senseofpromise.jpg">Sense of Promise</a>
-    </div>
-
-
-<!-- THE CAGE CAGE -->
-      <div id=exp>
-        <a href="http://www.thecagecage.com/" target="_blank">
-        <img border="0" alt="The Cage Cage" src="imgs\thecagecage.jpg">The Cage Cage</a>
-    </div>
-
-<!-- EYEXPO -->
-      <div id=exp>
-        <a href="http://eyexpo.com/vr/shoppingdemo1/index.html" target="_blank">
-        <img border="0" alt="Eyexpo" src="imgs\eyexpo.jpg">Eyexpo</a>
-    </div>
-
+        <?php
+      } // end while
+      mysqli_free_result($result);
+    ?>
 
     </div>
 
     <div id="bottominfo">
-      <h3>Created by <a href="brendanluu.com">brendan luu</a></h3>
+      <h3>Created by <a href="http://www.brendanluu.com">brendan luu</a></h3>
     </div>
 
 
@@ -197,10 +186,3 @@
 
   </body>
 </html>
-
-<div class="site">
-  <figure>
-    <img src="<?php echo $result['siteImage']; ?>" alt="<?php echo $result['siteTitle']; ?>">
-    <figcaption><?php echo $result['siteTitle']; ?></figcaption>
-  </figure>
-</div>

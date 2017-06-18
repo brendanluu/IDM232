@@ -15,5 +15,4 @@
         ' )' . mysqli_connect_errno() . ')'
     );
   }
-  echo "connected";
 ?>
